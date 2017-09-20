@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Shopping List website">
+	  <meta name="keywords" content="shopping list, keep track of shopping">
+  	<meta name="author" content="Felix Otieno">
+    <title>Flinch |  Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = './css/style.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Flinch</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <div id = "nav_left">
+            <form action="/signup" method="post">
+                
+                <button type="submit" class="button_1">Login</button>
+                <input type="email" name= "email" placeholder="Email: ">
+                <input type="password" name = "password" placeholder="Password: ">
+                <p>Incorrect Username or password</p>
+            </form>
+            </div>
+            
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        
+        <h1>Simply the best way of sharing the things you want to spend your money on as you keep track of your shopping list</h1>
+                <div class = "signup-section">
+                <form>
+                        
+                        <input type="email" placeholder="Email: ">
+                        <input type="password" placeholder="Password: ">
+                        <button type="submit" class="button_2">Sign up</button>
+                    </form>
+                    {% if cred %}
+                    
+                    {% endif %}
+        
+                </div>
+        
+        </div>
+    </section>
+
+   
+
+
+    <footer>
+      <p>Flinch Shopping lists, Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>

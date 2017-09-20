@@ -1,0 +1,296 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:24px;
+  background-color: cyan;
+  font-size: 16px;
+  border:0px;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.button_2{
+  height:24px;
+  background:rgba(255,255,255,0);
+  font-size: 16px;
+  border:0px;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:5px;
+  background:#f4f4f4;
+  color:#ffffff;
+  margin-top:0px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:10px;
+  min-height:50px;
+  
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+header .highlight, header .current a{
+  color:#ffffff;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+.signup-section{
+  //background-color: red;
+  height: 80px;
+  width:750px;
+  float: center;
+  padding-top: 50px;
+  
+  margin-left: 200px;
+  
+  
+}
+ .signup-section input{
+  margin-left: 20px;
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+ .signup-section button{
+  margin-left: 10px;
+  padding:4px;
+  height:35px;
+  width:80px;
+}
+
+
+.user-list{
+  
+  background-color: #ffffff;
+  height: 150px;
+  width:800px;
+  margin-top: 40px;
+  margin-left: 240px;
+  
+  
+}
+
+.account-name{
+  
+   background-color: #ffffff;
+  height: 80px;
+  width:770px;
+  margin-top: 40px;
+  margin-left: 240px;
+    padding-left:30px;
+  font-size: 28px;
+}
+
+.shopping-list-name{
+  
+   background-color: #ffffff;
+  height: 80px;
+  width:600px;
+  margin-top: 40px;
+  margin-left: 240px;
+ padding-top:10px;
+    padding-left:190px;
+  font-size: 20px;
+}
+
+.edit-shopping-list{
+  
+  background-color: #ffffff;
+  height: 150px;
+  width:800px;
+  margin-top: 40px;
+  margin-left: 240px;
+  
+  
+}
+#first-row{
+  background-color: yellow;
+  display: inline-block;
+  height: 60px;
+  width: 100%;
+  position:relative;
+  
+  
+}
+
+#user-name{
+  background-color: red;
+  height: 60px;
+  width: 40%;
+  position:relative;
+  
+}
+
+#user-cat{
+  
+  position:relative;
+  height: 60px;
+  width: 40px;
+  
+}
+
+.Row1
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 0px; /*Optional*/
+}
+
+.Row-name
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 0px; /*Optional*/
+  
+}
+.user-name
+{
+    display: table-cell;
+    color:cyan;
+    font-size: 17px;
+  padding-left:30px;
+
+}
+
+.user-name h1
+{
+    display: table-cell;
+    height:40px;
+    
+  
+
+}
+
+.list-category
+{
+    display: table-cell;
+  
+    height:60px;
+  margin-left: 50px;
+  padding-top: 40px;
+  
+    
+}
+.list-category-edit
+{
+    display: table-cell;
+    height:60px;
+    
+}
+
+.Row2
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 0px; /*Optional*/
+    color: #1345f7;
+  padding-left: 20px;
+}
+
+
+
+
+
+footer{
+  padding:10px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color: #0f0f0f;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
